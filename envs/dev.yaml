@@ -6,11 +6,12 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "2.0.0"
 
-imagePullSecrets: "gcp-artifact-registry-credentials"
+imagePullSecrets: 
+  name: gcp-artifact-registry-credentials
 
 service:
   type: ClusterIP
-  port: 80
+  port: 5000
 
 
 
