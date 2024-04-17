@@ -6,8 +6,8 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
-imagePullSecrets: 
-  name: "gcp-artifact-registry-credentials"
+#imagePullSecrets: 
+ # name: "gcp-artifact-registry-credentials"
 
 service:
   type: ClusterIP
