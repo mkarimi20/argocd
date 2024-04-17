@@ -1,13 +1,10 @@
 replicaCount: 3
 
 image:
-  repository: us-central1-docker.pkg.dev/terraform-project-practice/artemis/artemis
+  repository: "us-central1-docker.pkg.dev/terraform-project-practice/artemis/artemis"
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "2.0.0"
-
-imagePullSecrets: 
-  name: "gcp-artifact-registry-credentials"
 
 service:
   type: ClusterIP
